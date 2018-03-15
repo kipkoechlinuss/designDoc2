@@ -35,4 +35,6 @@ When a user program is started, we create a thread to handle the each user progr
 
 
 ## Rationale 
-We chose to use strtok_r instead of strtok because its thread safe
+* We chose to use strtok_r instead of strtok because its thread safe i.e it is reentrant. 
+* we will be pushing the parsed user arguments into the stack to esp. Pushing the user arguments to esp will ensure that the arguments are ran. 
+
