@@ -17,8 +17,6 @@ void parse_arguments(char *input)
    
 process_execute() will create a user program with "filename" as the arguments. We will call the function we created 
 `parse_arguments(filename)`  to parse the user input and pushed them to the stack. We will also perform a check to see if the arguments are valid. 
-we will also modify `process_wait()`  such that when a child process is created, the parent process
-will wait for this process to finish loading properly, then proceed to continue with its execution.
 
 ## Algorithms
 
@@ -31,10 +29,7 @@ one page size (4 KB).
 
 
 ## Synchronization 
-When a user program is started, we create a thread to handle the each user program started. We will use `wait(pid)` to wait for the program to finish executing. This if the user program starts another program we will be able to keep track of all the child programs. 
-
-
-
+When a user program is started, we create a thread to handle the each user program started therefore, we will also modify `process_wait()`  such that when a child process is created, the parent process will wait for this process to finish loading properly, then proceed to continue with its execution.
 
 ## Rationale 
 * We chose to use strtok_r instead of strtok because its thread safe i.e it is reentrant. 
