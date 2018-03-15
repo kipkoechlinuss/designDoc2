@@ -16,7 +16,7 @@ void parse_arguments(char *input)
   
    
 process_execute() will create a user program with "filename" as the arguments. We will call the function we created 
-parse_arguments(filename)  to parse the user input and pushed them to the stack. We will also perform a check to see if the arguments are valid. 
+`parse_arguments(filename)`  to parse the user input and pushed them to the stack. We will also perform a check to see if the arguments are valid. 
 we will also modify process_wait()  such that when a child process is created, the parent process
 will wait for this process to finish loading properly, then proceed to continue with its execution.
 
