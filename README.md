@@ -1,6 +1,8 @@
 
 ** Data Structures and Functions **
+
 Add a fucntion that will parse the arguments and put it in an array to process.c. 
+
 
 ``` void parse_arguments(char *input)
  {
