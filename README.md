@@ -35,5 +35,4 @@ one page size (4 KB).
 
 ## Rationale ---- **
 
-
 We chose to use strtok_r instead of strtok because its thread safe
