@@ -2,9 +2,8 @@
 ## Data Structures and Functions 
 
 Add a fucntion that will parse the arguments and put it in an array to process.c. 
-
-
-``void parse_arguments(char *input) 
+<pre>
+void parse_arguments(char *input) 
 {
   char args [1024];
   char *tokens = strtok_r(input, " ");
@@ -12,6 +11,7 @@ Add a fucntion that will parse the arguments and put it in an array to process.c
   	args[i] = tokens;
 	}
     }``
+    </pre>
   
    
   process_execute will create a user program with "filename" as the arguments. We will call the function we created 
